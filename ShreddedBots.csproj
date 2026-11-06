@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net452</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AssemblyName>ShreddedBots</AssemblyName>
+    <RootNamespace>ShreddedBots</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>false</GenerateBindingRedirectsOutputType>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <Product>ShreddedBots</Product>
+    <AssemblyTitle>ShreddedBots 0.8</AssemblyTitle>
+    <Company>MrRobotoDomoArigato</Company>
+    <Authors>MrRobotoDomoArigato</Authors>
+    <Copyright>© 2026 MrRobotoDomoArigato</Copyright>
+    <Description>ShreddedBots 0.8 - an unofficial fan mod that adds AI teammates for players 2-6 in offline local play for TMNT: Shredder's Revenge. Not affiliated with or endorsed by Tribute Games, Dotemu, Paramount or Valve.</Description>
+    <Version>0.8.0</Version>
+    <AssemblyVersion>0.8.0.0</AssemblyVersion>
+    <FileVersion>0.8.0.0</FileVersion>
+    <InformationalVersion>0.8</InformationalVersion>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <PathMap>$(MSBuildProjectDirectory)=/src</PathMap>
+    <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
+
+
+    <!-- Folder holding your own copy of the game's assemblies (compile-time only; Private=false so nothing is copied to the output).
+         Default: the game folder. Override: -p:GameDir="D:\Games\TMNT" -->
+    <GameDir Condition="'$(GameDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\TMNT</GameDir>
+    <GameDirSlash>$([MSBuild]::EnsureTrailingSlash('$(GameDir)'))</GameDirSlash>
+  </PropertyGroup>
+  <Target Name="CheckGameDir" BeforeTargets="ResolveAssemblyReferences" Condition="!Exists('$(GameDirSlash)TMNT.exe')">
+    <Error Text="TMNT.exe was not found in GameDir='$(GameDir)'. Point GameDir at your TMNT folder, e.g. dotnet build -c Release -p:GameDir=&quot;D:\Games\TMNT&quot;" />
+  </Target>
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.3.3" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="TMNT"><HintPath>$(GameDirSlash)TMNT.exe</HintPath><Private>false</Private></Reference>
+    <Reference Include="ParisEngine"><HintPath>$(GameDirSlash)ParisEngine.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="FNA"><HintPath>$(GameDirSlash)FNA.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="NBug"><HintPath>$(GameDirSlash)NBug.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="NLog"><HintPath>$(GameDirSlash)NLog.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

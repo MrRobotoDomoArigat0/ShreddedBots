@@ -50,13 +50,54 @@ Note: ShreddedBots opens a small console window next to the game. If you click i
 Windows may pause the game ("Select" appears in its title). Press Esc in that window to
 continue.
 
+## INSTALL Epic Games 
+-------
+1. Close the game. You can leave the Epic Games Launcher open and signed in.
+2. Open the game folder. The default location is:
 
-## Uninstall
+      C:\Program Files\Epic Games\TMNT
+
+   That folder contains TMNT.exe. (In the Epic Games Launcher you can also use
+   the game's Manage / install folder option if your path is different.)
+3. Rename TMNT.exe to TMNT-original.exe. Do not rename anything else. If a
+   previous install already left TMNT-original.exe as the official game, leave
+   it as it is.
+4. Copy the ShreddedBots folder from the zip into the game folder, so you have:
+
+      C:\Program Files\Epic Games\TMNT\ShreddedBots\ShreddedBots.exe
+      C:\Program Files\Epic Games\TMNT\ShreddedBots\ShreddedBots.exe.config
+      C:\Program Files\Epic Games\TMNT\ShreddedBots\0Harmony.dll
+5. Copy ShreddedBots.EpicLaunch.exe from the zip into the game folder as
+   TMNT.exe (replace the file if a previous helper is already there).
+   You should now have in the game folder:
+
+      TMNT.exe             = the ShreddedBots.EpicLaunch helper
+      TMNT-original.exe    = the official game
+      ShreddedBots\        = the mod (ShreddedBots.exe, its .config, and 0Harmony.dll)
+6. In the Epic Games Launcher, make sure you are signed into the account that
+   owns the game, then press Play.
+
+You can extract the zip straight into the game folder after you rename
+TMNT.exe to TMNT-original.exe. That places the ShreddedBots folder and
+ShreddedBots.EpicLaunch.exe in the game folder. You still need to copy
+ShreddedBots.EpicLaunch.exe to TMNT.exe, as in step 5.
+
+
+## Uninstall Steam
 
 Close the game and delete ShreddedBots.exe, ShreddedBots.exe.config, 0Harmony.dll, and
 optionally ShreddedBots.ini, ShreddedBots.log, and ShreddedBots.prev.log. Nothing else was
 changed. Starting the game from Steam as usual always gives you the unmodded game.
 
+
+## UNINSTALL Epic Games
+---------
+Close the game. In the game folder, delete the helper named TMNT.exe (the
+copy of ShreddedBots.EpicLaunch.exe) and delete the ShreddedBots subfolder.
+Rename TMNT-original.exe back to TMNT.exe. You can also delete ShreddedBots.ini,
+ShreddedBots.log, and ShreddedBots.prev.log from the game folder if you want.
+After that, starting the game from the Epic Games Launcher is the unmodded
+game again.
 
 ## Using The Bots – The F7 Menu
 

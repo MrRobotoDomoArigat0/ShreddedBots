@@ -33,7 +33,7 @@ attacks and high-fives, and use smarter behaviour in Survival and against major 
 
 ## Install Steam
 
-1. Close the game.
+1. Download ShreddedBots-0.8.zip
 2. In Steam, right-click TMNT: Shredder's Revenge > Manage > Browse local files.
    That folder contains TMNT.exe.
 3. Copy these files into that folder (next to TMNT.exe):
@@ -52,7 +52,7 @@ continue.
 
 ## INSTALL Epic Games 
 -------
-1. Close the game. You can leave the Epic Games Launcher open and signed in.
+1. Download the ShreddedBots-0.9-Epic.zip You can leave the Epic Games Launcher open and signed in.
 2. Open the game folder. The default location is:
 
       C:\Program Files\Epic Games\TMNT

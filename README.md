@@ -65,8 +65,11 @@ continue.
 4. Copy the ShreddedBots folder from the zip into the game folder, so you have:
 
       C:\Program Files\Epic Games\TMNT\ShreddedBots\ShreddedBots.exe
+      
       C:\Program Files\Epic Games\TMNT\ShreddedBots\ShreddedBots.exe.config
+      
       C:\Program Files\Epic Games\TMNT\ShreddedBots\0Harmony.dll
+      
 5. Copy ShreddedBots.EpicLaunch.exe from the zip into the game folder as
    TMNT.exe (replace the file if a previous helper is already there).
    You should now have in the game folder:

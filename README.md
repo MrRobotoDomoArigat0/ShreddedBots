@@ -31,7 +31,7 @@ attacks and high-fives, and use smarter behaviour in Survival and against major 
 - Windows with .NET Framework 4.x (4.5.2 or newer; already on Windows 10/11)
 
 
-## Install
+## Install Steam
 
 1. Close the game.
 2. In Steam, right-click TMNT: Shredder's Revenge > Manage > Browse local files.

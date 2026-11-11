@@ -51,7 +51,7 @@ Windows may pause the game ("Select" appears in its title). Press Esc in that wi
 continue.
 
 ## INSTALL Epic Games 
--------
+
 1. Download the ShreddedBots-0.9-Epic.zip You can leave the Epic Games Launcher open and signed in.
 2. Open the game folder. The default location is:
 

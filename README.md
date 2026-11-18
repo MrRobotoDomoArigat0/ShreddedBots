@@ -1,6 +1,6 @@
 # ShreddedBots 0.8
 
-**AI teammates for Teenage Mutant Ninja Turtles: Shredder's Revenge (offline local play)**
+**CPU teammates for Teenage Mutant Ninja Turtles: Shredder's Revenge (offline local play)**
 
 Copyright © 2026 MrRobotoDomoArigato · [YouTube](https://www.youtube.com/@MrRobotoDomoArigato)
 
